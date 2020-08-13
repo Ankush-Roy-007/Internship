@@ -1,0 +1,100 @@
+table#miyazaki {
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-family: Agenda-Light, sans-serif;
+  font-weight: 100;
+  background: #333;
+  color: #fff;
+  text-rendering: optimizeLegibility;
+  border-radius: 5px;
+}
+
+table#miyazaki caption {
+  font-size: 2rem;
+  color: #444;
+  margin: 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center left, center right;
+}
+
+table#miyazaki thead th {
+  font-weight: 600;
+}
+
+table#miyazaki thead th, table#miyazaki tbody td {
+  padding: .8rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+table#miyazaki tbody td {
+  padding: .8rem;
+  font-size: 1.0rem;
+  color: #444;
+  background: #eee;
+}
+
+table#miyazaki tbody tr:not(:last-child) {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+#update{
+  display:block;
+  margin:0 auto 10px;
+  padding:7px;
+  border:none;
+  border-radius:10px;
+  background-color:green;
+  font-size:16px;
+  color:rgb(255, 255, 255);
+}
+
+#delete{
+  display:block;
+  margin:0 auto 10px;
+  padding:7px;
+  border:none;
+  border-radius:10px;
+  background-color:red;
+  font-size:16px;
+  color:rgb(255, 255, 255);
+}
+
+.updel{
+  color: white;
+  text-decoration: none;
+}
+
+#gomain{
+  text-align: center;
+  font-size: 120%;
+}
+
+@media screen and (max-width: 600px) {
+  table#miyazaki caption {
+    background-image: none;
+  }
+
+  table#miyazaki thead {
+    display: none;
+  }
+
+  table#miyazaki tbody td {
+    display: block;
+    padding: .6rem;
+  }
+
+  table#miyazaki tbody tr td:first-child {
+    background: #666;
+    color: #fff;
+  }
+
+  table#miyazaki tbody td:before {
+    content: attr(data-th);
+    font-weight: bold;
+    display: inline-block;
+    width: 6rem;
+  }
+}

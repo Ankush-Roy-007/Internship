@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Registration</title>
+  <script type="text/javascript" src="normalvalidation.js"></script>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+  <div>
+    <form action="datainsert.php" onsubmit="return val()" method="post">
+      <lable id="title">Registration Form</lable>
+      <table>
+        <tbody>
+          <tr>
+            <td class="lbl">Name:</td>
+            <td><input type="text" name="name" id="name" class="textbox" />
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <lable class="help">Maximum 30 characters</lable>
+            </td>
+          </tr>
+          <tr>
+            <td class="lbl">E-mail:</td>
+            <td><input type="email" name="email" id="email" class="textbox" />
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <lable class="help">abcd@efgh.ij</lable>
+            </td>
+          </tr>
+          <tr>
+            <td class="lbl">Mobile No.:</td>
+            <td><input type="tel" name="telephone" id="telephone" class="textbox" />
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <lable class="help">Max 10 digit</lable>
+            </td>
+          </tr>
+          <tr>
+            <td class="lbl">Date of Birth:</td>
+            <td><input type="date" name="date" id="date" class="textbox" />
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <lable class="help">Date-Month-Year</lable>
+            </td>
+          </tr>
+          <tr>
+            <td class="lbl">PIN code:</td>
+            <td><input type="tel" name="pin" id="pin" class="textbox" />
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <lable class="help">Max 6 digit</lable>
+            </td>
+          </tr>
+          </tbody>
+      </table>
+      <input type="submit" id="submit" value="Submit" />
+      <br />
+      <br />
+      <p id="demo">
+      </p>
+    </form>
+  </div>
+  <div style="text-align: center;font-size: 120%">
+    <a href="index.html" style="color: white">Click to go Home</a>
+  </div>
+</body>
+
+</html>

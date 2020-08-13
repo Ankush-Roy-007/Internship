@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <a href="create.html">
+    <div class="big-button">
+    <div class="big-button__title">
+      Click to Register
+    </div>
+  </div>
+</a>
+
+  <a href="display.php">
+    <div class="big-button">
+    <div class="big-button__title">
+      Click to view List
+    </div>
+  </div>
+  </a>
+
+  <style>
+      body {
+  background: #ee0979;
+  background: -webkit-linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  );
+  background: linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.big-button {
+  border-radius: 20%;
+  width: 80vh;
+  height: 80vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4vh;
+  color: orangered;
+  box-shadow: 0 5px 5px rgba(50, 50, 93, 0.2), 0 5px 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 350ms;
+  transition: transform 350ms;
+  transition: border-radius 100ms;
+  cursor: pointer;
+  }
+
+  .big-button__title {
+    font-size: 10vh;
+    text-align: center;
+    transition: transform 350ms;
+    user-select: none;
+  }
+
+    a {
+      font-size: 150%;
+      text-decoration: none;
+    }
+  </style>
+</body>
+
+</html>
